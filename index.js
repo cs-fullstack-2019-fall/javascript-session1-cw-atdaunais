@@ -21,11 +21,9 @@ console.log(facebookArray); //here I'm checking to make sure the array is empty 
 main();
 console.log(facebookArray);
 
-//STILL WORKING ON THIS
-// let newString = facebookArray.map(function(eachElement){
-//     eachElement[eachElement];
-//     return "<h1 style='color:blue;background:red;text-shadow: -2px 2px 2px #000000;'>eachElement</h1>"
-// });
-// console.log(newString);
-// document.getElementById("classwork").innerHTML = newString;
+let newString = facebookArray.map(function(eachElement){
+    return ("<h1 style='color:blue;background:red;text-shadow: -2px 2px 2px #000000;'>" + eachElement.name + "</h1>")
+});
+console.log(newString);
+document.getElementById("classwork").innerHTML = newString;
 
